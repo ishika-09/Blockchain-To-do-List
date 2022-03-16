@@ -1,0 +1,140 @@
+.navbar
+{
+    background-color: #3d5a80;
+    margin: 0;
+    margin-left: -8px;
+    padding-left: 8px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+.navbar-list 
+{
+    list-style-type: none;
+
+}
+
+.navbar-list-item 
+{
+    display: inline;
+    font-size:25px;
+    color: #e0fbfc;
+}
+.navbar-link:link,.navbar-link:visited
+{
+    padding-right: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #e0fbfc;
+}
+.container-fluid
+{
+    display: flex;
+    flex-direction: column;
+}
+.taskTemplate
+{
+    display: flex;
+    margin-left: -8px;
+    width: 100%;
+    overflow-wrap: break-word;
+    padding: 20px;
+    padding-left: 10%;
+}
+.list-unstyled
+{
+    font-size:medium;
+    color: #293241;
+    padding: 0;
+}
+.taskTemplate:nth-child(even)
+{
+    background-color:#98c1d9b9;
+}
+.container 
+{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input 
+{
+    position: absolute;
+    padding: auto;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark 
+{
+    position: absolute;
+    padding: auto;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #293241;
+    background-color: #293241a1;
+}
+
+.container:hover input ~ .checkmark 
+{
+    background-color: #293241;
+}
+body
+{
+    background-color:#98c1d95e;
+    overflow: hidden;
+}
+.addTask
+{
+    margin: auto;
+    width: 75%;
+    position: relative;
+    align-items: center;
+}
+.form-control
+{
+    align-items: center;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: medium;
+    display: inline-block;
+    background-color:#98c1d941;
+    border: 2px solid #293241;
+}
+::placeholder 
+{ 
+    color:#293241;
+    font-size:large;
+    opacity: 1; 
+}
+main 
+{
+    margin-top: 60px;
+}
+#content 
+{
+    display: none;
+}
+form 
+{
+    width: 60%;
+    margin-bottom: 10px;
+}
+ul 
+{
+    margin-bottom: 0px;
+}
